@@ -3,12 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <meta name="author" content="Justin Jhun V. Quilit">
+    <meta name="description" content="Cs Portfolio of Justin Jhun V. Quilit">
+    <meta name="keyword" content="cs, computer science, portfolio">
+    <link rel="icon" href="pictures/pexels-ihsan-aditya-1056251.jpg">
+    <title>Justin Jhun V. Quilit's Portfolio</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
         html, body{
             margin: 0%;
             padding: 0%;
+        }
+        #scrollUp{
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 50%;
         }
         .icon-size{
             width: 20px;
@@ -36,18 +52,49 @@
     </style>
 </head>
 <body>
+    <div id="mobile-content" style="display: none;">
+        <div class="card text-center">
+            <div class="card-header bg-secondary text-light">
+                <div class="row p-3">
+                    <div class="col-auto mr-auto">
+                        Menu
+                    </div>
+                    <div class="col-auto auto">
+                        <strong class="off-mobile">X</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <a class="off-mobile p-3" href="#home"><h6>Home</h6></a>
+                    </div>
+                    <div class="col-sm-12">
+                        <a class="off-mobile p-3" href="#about-me"><h6>About Me</h6></a>
+                    </div>
+                    <div class="col-sm-12">
+                        <a class="off-mobile p-3" href="#skills"><h6>Skills</h6></a>
+                    </div>
+                    <div class="col-sm-12">
+                        <a class="off-mobile p-3" href="#achievements"><h6>Achievements</h6></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="body-contents" class="bg-muted">
         <div class="container">
+            <button id="scrollUp"><img class="icon-size" src="pictures/arrowup logo.png"></button>
             <header>
                 <div class="row bg-light p-3">
                     <div class="col-auto mr-auto text-primary">
                         <h4>Justin</h4>
                     </div>
                     <div class="col-auto auto">
-                        <a href="#"><img class="desktop-content icon-size mr-2"src="pictures/facebook logo.png"></a>
-                        <a href="#"><img class="desktop-content icon-size mr-2"src="pictures/github logo.png"></a>
-                        <a href="#"><img class="desktop-content icon-size mr-2"src="pictures/linkedin logo.png"></a>
-                        <a href="#"><img id="burger-menu" class="icon-size mr-2"src="pictures/hamburger logo.png" style="display:none"></a>
+                        <a href="#" target="_blank"><img class="desktop-content icon-size mr-2"src="pictures/facebook logo.png"></a>
+                        <a href="#" target="_blank"><img class="desktop-content icon-size mr-2"src="pictures/github logo.png"></a>
+                        <a href="#" target="_blank"><img class="desktop-content icon-size mr-2"src="pictures/linkedin logo.png"></a>
+                        <a href="#"><img id="burger-menu" class="icon-size mt-2"src="pictures/hamburger logo.png" style="display:none"></a>
                     </div>
                 </div>            
                 <div class="desktop-content d-flex justify-content-end">
@@ -138,7 +185,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="Achievements" class="row p-3">
+                <div id="achievements" class="row p-3">
                     <div class="col-sm-12 p-3">
                         <h3>
                             Achievements
@@ -148,10 +195,26 @@
                         <div class="card m-auto" style="width: 18rem;">
                             <div class="card-body bg-light text-center">
                               <h6 class="card-text">Joined Hackfest 2020</h6>
+                              <a href="Cert/Certificate of Recognition_Office365.pdf" target="_blank" class="btn btn-primary">Go</a>
                             </div>
                         </div>
                     </div>
-                    
+                    <div class="col-sm-12 col-md-6 col-lg-4 p-3">
+                        <div class="card m-auto" style="width: 18rem;">
+                            <div class="card-body bg-light text-center">
+                              <h6 class="card-text">Random Player Picker</h6>
+                              <a href="https://quilitjustin.me/PlayerPicker/index.html" target="_blank" class="btn btn-primary">Go</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 p-3">
+                        <div class="card m-auto" style="width: 18rem;">
+                            <div class="card-body bg-light text-center">
+                              <h6 class="card-text">This Portfolio</h6>
+                              <a href="https://quilitjustin.me/" target="_blank" class="btn btn-primary">Go</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </main>
             <footer>
@@ -162,11 +225,21 @@
                         <a href="#"><img class="icon-size m-3"src="pictures/github logo.png"></a>
                         <a href="#"><img class="icon-size m-3"src="pictures/linkedin logo.png"></a>
                     </div>
-                    <div class="col-sm-12 col-lg-9 px-5">
-                        <a class="nav-links p-3" href="#home"><h6>Home</h6></a>
-                        <a class="nav-links p-3" href="#about-me"><h6>About Me</h6></a>
-                        <a class="nav-links p-3" href="#skills"><h6>Skills</h6></a>
-                        <a class="nav-links p-3" href="#achievements"><h6>Achievements</h6></a>
+                    <div class="col-sm-12 col-lg-9">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6 col-lg-3">
+                                <a class="p-3" href="#home"><h6>Home</h6></a>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-3">
+                                <a class="p-3" href="#about-me"><h6>About Me</h6></a>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-3">
+                                <a class="p-3" href="#skills"><h6>Skills</h6></a>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-3">
+                                <a class="p-3" href="#achievements"><h6>Achievements</h6></a>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-sm-12 text-center bg-dark text-light p-1">
                         Copyright © 2020 Justin
@@ -175,8 +248,38 @@
             </footer>
         </div>
     </div>
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script>
+    $('#burger-menu').click(function(event){
+        event.preventDefault();
+        $('#body-contents').hide();
+        $('#mobile-content').show();
+    });
+    $('.off-mobile').click(function(event){
+        event.preventDefault();
+        $('#mobile-content').hide();
+        $('#body-contents').show();
+    });
+    let mybutton = document.getElementById("scrollUp");
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+    }
+
+    $('#scrollUp').click(function() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    });
+</script>
 </body>
 </html>
