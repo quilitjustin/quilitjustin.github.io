@@ -262,23 +262,23 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 <script>
-    $('#burger-menu').click(function(event){
+    $('#burger-menu').click(function(){
         $('#body-contents').hide();
         $('#mobile-content').show();
     });
-    $('.off-mobile').click(function(event){
+    $('.off-mobile').click(function(){
         $('#mobile-content').hide();
         $('#body-contents').show();
     });
-    let mybutton = document.getElementById("scrollUp");
+    let scrollUpBtn = document.getElementById("scrollUp");
 
     window.onscroll = function() {scrollFunction()};
 
     function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
+        scrollUpBtn.style.display = "block";
     } else {
-        mybutton.style.display = "none";
+        scrollUpBtn.style.display = "none";
     }
     }
 
