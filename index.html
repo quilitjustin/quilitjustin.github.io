@@ -262,12 +262,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 <script>
-    $('.nav-links').click(function(event){
-        event.preventDefault();
-        target= this.getAttribute("data-target");
-        coor = document.getElementById(target);
-        coor.scrollIntoView();
-    })
     $('#burger-menu').click(function(event){
         event.preventDefault();
         $('#body-contents').hide();
@@ -277,6 +271,12 @@
         event.preventDefault();
         $('#mobile-content').hide();
         $('#body-contents').show();
+    });
+    $('.nav-links').click(function(event){
+        event.preventDefault();
+        target= this.getAttribute("data-target");
+        coor = document.getElementById(target);
+        coor.scrollIntoView();
     });
     let scrollUpBtn = document.getElementById("scrollUp");
 
