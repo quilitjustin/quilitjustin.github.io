@@ -102,11 +102,11 @@
                         <a href="#"><img id="burger-menu" class="icon-size mt-2"src="pictures/hamburger logo.png" style="display:none"></a>
                     </div>
                 </div>            
-                <div class="desktop-content d-flex justify-content-end">
-                    <a class="desktop-content nav-links mr-3 p-3" href="#" data-target="home"><h5>Home</h5></a>
-                    <a class="desktop-content nav-links mr-3 p-3" href="#" data-target="about-me"><h5>About Me</h5></a>
-                    <a class="desktop-content nav-links mr-3 p-3" href="#" data-target="skills"><h5>Skills</h5></a>
-                    <a class="desktop-content nav-links mr-3 p-3" href="#" data-target="achievements"><h5>Achievements</h5></a>
+                <div class="d-flex justify-content-end">
+                    <a class="desktop-nav desktop-content nav-links mr-3 p-3" href="#" data-target="home"><h5>Home</h5></a>
+                    <a class="desktop-nav desktop-content nav-links mr-3 p-3" href="#" data-target="about-me"><h5>About Me</h5></a>
+                    <a class="desktop-nav desktop-content nav-links mr-3 p-3" href="#" data-target="skills"><h5>Skills</h5></a>
+                    <a class="desktop-nav desktop-content nav-links mr-3 p-3" href="#" data-target="achievements"><h5>Achievements</h5></a>
                 </div>
             </header>
             <main>
@@ -267,7 +267,7 @@
         target= this.getAttribute("data-target");
         coor = document.getElementById(target);
         coor.scrollIntoView();
-    });
+    })
     $('#burger-menu').click(function(event){
         event.preventDefault();
         $('#body-contents').hide();
